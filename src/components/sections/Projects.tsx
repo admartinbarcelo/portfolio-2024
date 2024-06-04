@@ -61,7 +61,7 @@ export const Projects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                      <Link href={item.hrefRepository ?? ""} className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      <Link target="_blank" href={item.hrefRepository ?? ""} className="flex lg:text-xl md:text-xs text-sm text-purple">
                         Check The Respository
                       </Link>
                       <FaLocationArrow className="ms-3" color="#CBACF9" />
