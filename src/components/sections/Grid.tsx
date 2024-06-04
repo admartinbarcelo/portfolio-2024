@@ -3,7 +3,7 @@ import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
 
 
-const Grid = () => {
+export const Grid = () => {
   return (
     <section id="about">
       <BentoGrid className="w-full py-20">
@@ -25,4 +25,3 @@ const Grid = () => {
   );
 };
 
-export default Grid;

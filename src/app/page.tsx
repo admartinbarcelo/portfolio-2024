@@ -1,5 +1,6 @@
 import { FloatingNav } from "@/components/layout/FloatingNavbar";
-import Grid from "@/components/sections/Grid";
+import { Footer } from "@/components/sections/Footer";
+import { Grid } from "@/components/sections/Grid";
 import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
 import { navItems } from "@/data";
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
