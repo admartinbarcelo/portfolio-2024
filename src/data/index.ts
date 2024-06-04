@@ -76,14 +76,23 @@ export const projectItems = [
     description: 'A web application designed for travelers. It offers the ability to get full travel packages and meet new people.',
     img: '/Project-1.webp',
     iconLists: ["/re.svg","/ts.svg","/bs.svg", "/node.svg", "/mdb.svg" ],
-    link: '',
+    link: 'https://handsup-project.netlify.app/',
   },
   {
     id: 2,
     title: 'EvoGym - Evolutionary fitness',
     description: 'A website designed to recreate a fitness-oriented business with a modern look. ',
     img: '/Project-2.webp',
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: '',
+    iconLists: ["/re.svg","/ts.svg", "/tail.svg",],
+    link: 'https://gymsite-typescript.netlify.app/',
+  },
+  {
+    id: 3,
+    title: 'Brekkie - Brunch & Coffee',
+    description: 'A website designed to recreate a brunch and coffee shop with a modern look for practice BEM methodology.',
+    img: '/Project-3.webp',
+    iconLists: ["/re.svg", "/css.svg"],
+    link: 'https://brekkie.netlify.app/',
+    hrefRepository: 'https://github.com/admartinbarcelo/Rest-Practice-BEM-CSS'
   },
 ]

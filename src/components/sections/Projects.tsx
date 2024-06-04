@@ -1,6 +1,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projectItems } from "../../data/index";
 import { PinContainer } from "../ui/PinContainer";
+import Link from "next/link";
 
 export const Projects = () => {
   return (
@@ -60,10 +61,10 @@ export const Projects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                      <Link href={item.hrefRepository ?? ""} className="flex lg:text-xl md:text-xs text-sm text-purple">
+                        Check The Respository
+                      </Link>
+                      <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>

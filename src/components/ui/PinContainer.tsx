@@ -11,12 +11,14 @@ export const PinContainer = ({
   children,
   title,
   href,
+  hrefRepository,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
   href: string;
+  hrefRepository?: string; 
   className?: string;
   containerClassName?: string;
 }) => {
