@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projectItems } from "../../data/index";
 import { PinContainer } from "../ui/PinContainer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Projects = () => {
   return (
@@ -22,12 +23,14 @@ export const Projects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image src="/bg.png" alt="bgimg" width={500} height={500} />
                 </div>
-                <img
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  width={500}
+                  height={500}
+                  className="z-10 absolute bottom-0 w-full h-full overflow-hidden lg:rounded-3xl "
                 />
               </div>
 
@@ -55,7 +58,7 @@ export const Projects = () => {
                         transform: `translateX(-${5 * index * 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image src={icon} alt="icon5" className="p-2" width={35} height={35} />
                     </div>
                   ))}
                 </div>
