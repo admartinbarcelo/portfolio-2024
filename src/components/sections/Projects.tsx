@@ -35,7 +35,7 @@ export const Projects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-3"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

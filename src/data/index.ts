@@ -72,18 +72,18 @@ export const gridItems = [
 export const projectItems = [
   {
     id: 1,
-    title: 'hola hola ',
-    description: '',
-    img: '',
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    title: 'Hands Up - Meet new people',
+    description: 'A web application designed for travelers. It offers the ability to get full travel packages and meet new people.',
+    img: '/Project-1.webp',
+    iconLists: ["/re.svg","/ts.svg","/bs.svg", "/node.svg", "/mdb.svg" ],
     link: '',
   },
   {
     id: 2,
-    title: 'hola que tal',
-    description: '',
-    img: '',
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    title: 'EvoGym - Evolutionary fitness',
+    description: 'A website designed to recreate a fitness-oriented business with a modern look. ',
+    img: '/Project-2.webp',
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: '',
   },
 ]
