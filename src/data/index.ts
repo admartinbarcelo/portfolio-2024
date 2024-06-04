@@ -75,7 +75,7 @@ export const projectItems = [
     title: 'Hands Up - Meet new people',
     description: 'A web application designed for travelers. It offers the ability to get full travel packages and meet new people.',
     img: '/Project-1.webp',
-    iconLists: ["/re.svg","/ts.svg","/bs.svg", "/node.svg", "/mdb.svg" ],
+    iconLists: ["/re.svg","/ts.svg","/bootstrap.svg", "/node.svg", "/mdb.svg" ],
     link: 'https://handsup-project.netlify.app/',
   },
   {
@@ -94,5 +94,14 @@ export const projectItems = [
     iconLists: ["/re.svg", "/css.svg"],
     link: 'https://brekkie.netlify.app/',
     hrefRepository: 'https://github.com/admartinbarcelo/Rest-Practice-BEM-CSS'
+  },
+  {
+    id: 4,
+    title: 'DragonBall - Doodle Jump',
+    description: 'Game developed with JavaScript (ES6), HTML5, CANVAS and CSS3 technology.',
+    img: '/Project-4.webp',
+    iconLists: ["/javascript.svg","/html5.svg", "/css.svg"],
+    link: 'https://dragon-doodle.netlify.app/',
+    hrefRepository: 'https://github.com/admartinbarcelo/dragonBall-Jump'
   },
 ]
