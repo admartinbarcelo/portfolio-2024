@@ -23,13 +23,18 @@ export const Projects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image src="/bg.png" alt="bgimg" width={500} height={500} />
+                  <Image
+                    src="/bg.png"
+                    alt="bgimg"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
                 <Image
                   src={item.img}
                   alt="cover"
-                  width={500}
-                  height={500}
+                  layout="fill"
+                  objectFit="cover"
                   className="z-10 absolute bottom-0 w-full h-full overflow-hidden lg:rounded-3xl "
                 />
               </div>
@@ -58,16 +63,26 @@ export const Projects = () => {
                         transform: `translateX(-${5 * index * 2}px)`,
                       }}
                     >
-                      <Image src={icon} alt="icon5" className="p-2" width={35} height={35} />
+                      <Image
+                        src={icon}
+                        alt="icon5"
+                        className="p-2"
+                        width={35}
+                        height={35}
+                      />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
-                      <Link target="_blank" href={item.hrefRepository ?? ""} className="flex lg:text-xl md:text-xs text-sm text-purple">
-                        Check The Respository
-                      </Link>
-                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <Link
+                    target="_blank"
+                    href={item.hrefRepository ?? ""}
+                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                  >
+                    Check The Respository
+                  </Link>
+                  <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>
