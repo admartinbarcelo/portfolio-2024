@@ -91,6 +91,9 @@ export const BentoGridItem = ({
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
+          {id === 1 && (
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0C0E23] to-transparent"></div>
+          )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
@@ -124,7 +127,7 @@ export const BentoGridItem = ({
           </div>
 
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans font-bold text-lg lg:text-3xl max-w-96  z-10`}
           >
             {title}
           </div>
