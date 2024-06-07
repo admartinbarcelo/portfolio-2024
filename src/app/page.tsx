@@ -1,8 +1,9 @@
 import { FloatingNav } from "@/components/layout/FloatingNavbar";
-import { Footer } from "@/components/sections/Footer";
-import { Grid } from "@/components/sections/Grid";
 import { Hero } from "@/components/sections/Hero";
+import { Grid } from "@/components/sections/Grid";
 import { Projects } from "@/components/sections/Projects";
+import { Experience } from "@/components/sections/Experience";
+import { Footer } from "@/components/sections/Footer";
 
 import { navItems } from "@/data";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <Projects />
+        <Experience />
         <Footer />
       </div>
     </main>

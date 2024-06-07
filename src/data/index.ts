@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -110,16 +111,40 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    href:"https://github.com/admartinbarcelo",
+    href: "https://github.com/admartinbarcelo",
   },
   {
     id: 2,
     img: "/link.svg",
-    href:"https://www.linkedin.com/in/admartinbarcelo/",
+    href: "https://www.linkedin.com/in/admartinbarcelo/",
   },
   {
     id: 3,
     img: "/insta.svg",
-    href:"https://www.instagram.com/im_adrianmartin/",
+    href: "https://www.instagram.com/im_adrianmartin/",
+  },
+];
+
+export const experienceItems = [
+  {
+    id: 1,
+    title: 'Frontend Software Engineer',
+    description: 'As a Frontend Developer, I work on transitions, maintenance, and the development of new applications and functionalities.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp1.svg',
+  },
+  {
+    id: 2,
+    title: 'Freelance Full-Stack Developer',
+    description: 'As a Full-Stack Developer, I work on the development of new applications and functionalities, as well as the maintenance of existing applications',
+    className: 'md:col-span-2',
+    thumbnail: '/exp2.svg',
+  },
+  {
+    id: 3,
+    title: 'Full-Stack Developer ',
+    description: 'Completed a 9-week intensive program covering full-stack web development with the MERN stack at a top 3 globally ranked tech school ',
+    className: 'md:col-span-2',
+    thumbnail: '/exp3.svg',
   },
 ];
