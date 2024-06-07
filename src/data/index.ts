@@ -129,14 +129,14 @@ export const experienceItems = [
   {
     id: 1,
     title: 'Frontend Software Engineer',
-    description: 'As a Frontend Developer, I work on transitions, maintenance, and the development of new applications and functionalities.',
+    description: 'I work on transitions, maintenance, and the development of new applications and functionalities.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
   {
     id: 2,
     title: 'Freelance Full-Stack Developer',
-    description: 'As a Full-Stack Developer, I work on the development of new applications and functionalities, as well as the maintenance of existing applications',
+    description: 'I work on the development of new applications and functionalities, as well as the maintenance of existing applications',
     className: 'md:col-span-2',
     thumbnail: '/exp2.svg',
   },
