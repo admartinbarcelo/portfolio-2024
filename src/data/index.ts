@@ -76,7 +76,7 @@ export const projectItems = [
     title: 'Hands Up - Meet new people',
     description: 'A web application designed for travelers. It offers the ability to get full travel packages and meet new people.',
     img: '/Project-1.webp',
-    iconLists: ["/re.svg", "/ts.svg", "/bootstrap.svg", "/node.svg", "/mdb.svg"],
+    iconLists: ["/re.svg", "/bootstrap.svg", "/node.svg", "/mdb.svg"],
     link: 'https://handsup-project.netlify.app/',
   },
   {
@@ -98,6 +98,24 @@ export const projectItems = [
   },
   {
     id: 4,
+    title: 'Porfolio - v1',
+    description: 'The first version of my portfolio, designed to showcase my skills and projects.',
+    img: '/first-portfolio.webp',
+    iconLists: ["/re.svg", "/css.svg"],
+    link: 'https://admartinbarcelo.netlify.app/',
+    hrefRepository: 'https://github.com/admartinbarcelo/portfolio-admartinbarcelo'
+  },
+  {
+    id: 5,
+    title: 'Clippy - The Clipboard',
+    description: 'A website designed to create an app that allows users to make questions of their code problems.',
+    img: '/Project-5.webp',
+    iconLists: ["/javascript.svg", "/html5.svg", "/bootstrap.svg", "/node.svg", "/mdb.svg"],
+    link: 'https://clippy1.fly.dev/',
+    hrefRepository: 'https://github.com/admartinbarcelo/Clippy'
+  },
+  {
+    id: 6,
     title: 'DragonBall - Doodle Jump',
     description: 'Game developed with JavaScript (ES6), HTML5, CANVAS and CSS3 technology.',
     img: '/Project-4.webp',
