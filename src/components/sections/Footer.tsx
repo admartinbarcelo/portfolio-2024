@@ -14,7 +14,7 @@ export const Footer = () => {
           alt="grid"
           layout="fill"
           objectFit="cover"
-          className="opacity-100"
+          className="opacity-50"
         />
       </div>
 
