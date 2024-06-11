@@ -12,17 +12,14 @@ export const Projects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-        {projectItems.map(({id, title, description, img, iconLists, link, hrefRepository}) => (
+        {projectItems.map(({ id, title, description, img, iconLists, link, hrefRepository }) => (
           <div
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={id}
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
+                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
                   <Image
                     src="/bg.png"
                     alt="bgimg"
@@ -35,7 +32,7 @@ export const Projects = () => {
                   alt="cover"
                   layout="fill"
                   objectFit="cover"
-                  className="z-10 absolute bottom-0 "
+                  className="z-10 absolute bottom-0"
                 />
               </div>
 
@@ -43,13 +40,7 @@ export const Projects = () => {
                 {title}
               </h1>
 
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-[#BEC1DD] my-2">
                 {description}
               </p>
 
@@ -58,14 +49,11 @@ export const Projects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index * 2}px)`,
-                      }}
+                      className={`border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center -translate-x-${index * 2}`}
                     >
                       <Image
                         src={icon}
-                        alt="icon5"
+                        alt="icon"
                         className="p-2"
                         width={35}
                         height={35}
@@ -80,7 +68,7 @@ export const Projects = () => {
                     href={hrefRepository ?? ""}
                     className="flex lg:text-xl md:text-xs text-sm text-purple"
                   >
-                    Check The Respository
+                    Check The Repository
                   </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

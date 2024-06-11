@@ -78,6 +78,8 @@ export const projectItems = [
     img: '/Project-1.webp',
     iconLists: ["/re.svg", "/bootstrap.svg", "/node.svg", "/mdb.svg"],
     link: 'https://handsup-project.netlify.app/',
+    hrefRepository: 'https://github.com/admartinbarcelo/HandsUp-Client'
+
   },
   {
     id: 2,
@@ -86,6 +88,8 @@ export const projectItems = [
     img: '/Project-2.webp',
     iconLists: ["/re.svg", "/ts.svg", "/tail.svg",],
     link: 'https://gymsite-typescript.netlify.app/',
+    hrefRepository: 'https://github.com/admartinbarcelo/Typescript-APP'
+
   },
   {
     id: 3,
