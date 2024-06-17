@@ -62,16 +62,16 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+  
+  const handleDownloaded = () => {
+    setDownloaded(true);
+  };
   const handleCopy = () => {
     const text = "adrian.m.barcelo@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
 
-  const handleDownloaded = () => {
-    setDownloaded(true);
-  };
 
   return (
     <div
@@ -183,6 +183,7 @@ export const BentoGridItem = ({
                 position="left"
                 handleClick={handleDownloaded}
                 otherClasses="!bg-[#161A31]"
+                href="/Adrian_Barcelo_CV.pdf"
               />
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email"}
