@@ -52,7 +52,8 @@ export const BentoGridItem = ({
   const rightLists = ["Express", "NodeJS", "MongoDB"];
 
   const [copied, setCopied] = useState(false);
-
+  const [downloaded, setDownloaded] = useState(false);
+  
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
@@ -63,9 +64,13 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "admartin@gmail.com";
+    const text = "adrian.m.barcelo@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+  };
+
+  const handleDownloaded = () => {
+    setDownloaded(true);
   };
 
   return (
@@ -163,7 +168,7 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="mt-5 relative flex flex-col-2">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
@@ -173,7 +178,14 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={downloaded ? "Downloaded!" : "Download my CV"}
+                icon={<IoCopyOutline />}
+                position="left"
+                handleClick={handleDownloaded}
+                otherClasses="!bg-[#161A31]"
+              />
+              <MagicButton
+                title={copied ? "Email is Copied!" : "Copy my email"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
