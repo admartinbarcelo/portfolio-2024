@@ -168,7 +168,7 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative flex flex-col-2">
+            <div className="mt-5 relative">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
@@ -177,14 +177,14 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
+              {/* <MagicButton
                 title={downloaded ? "Downloaded!" : "Download my CV"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleDownloaded}
                 otherClasses="!bg-[#161A31]"
                 href="/Adrian_Barcelo_CV.pdf"
-              />
+              /> */}
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email"}
                 icon={<IoCopyOutline />}
